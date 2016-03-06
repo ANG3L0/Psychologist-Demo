@@ -7,7 +7,7 @@ Basically the demo for Lecture 7 where multiple MVCs are discussed.  The happine
 ##Main things learned for me
   * Segues can be done with both ctrl+drag and also in code.
     * In code: `prepareSegueWithIdentifier`
-  * Segues are prepared for with 	`prepareForSegu` -- allows view to be modified with respect to app state.
+  * Segues are prepared for with 	`prepareForSegue` -- allows view to be modified with respect to app state.
     * Tricky thing here: during preparation the view has not yet been instantiate so functions that try to use it beforehand must optional-chain it.
     * When you segue, the resulting MVC is brand-new (as when you remove it from top of stack by going back the MVC no longer exists).
   * The diagnosis history is not related to Happiness MVC as the Happiness MVC's job is mostly only to show the face.  Solution: subclass `HappinessViewController` to `DiagnosedHappinessViewController` to call out the history (`TextViewController`).  This is very common, apparently, to subclass an MVC into multiple various MVCs as not to dirty up the main MVC and is good for maintainability.  For example, `HappinessViewController` is a 3rd-party API or just something that should not be touched at all.
