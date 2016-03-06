@@ -23,4 +23,4 @@ Basically the demo for Lecture 7 where multiple MVCs are discussed.  The happine
 
 
 ##Demo
-[Demo]psych_demo.gif
+![Demo](psych_demo.gif)
