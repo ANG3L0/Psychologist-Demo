@@ -20,3 +20,7 @@ Basically the demo for Lecture 7 where multiple MVCs are discussed.  The happine
   * Customization of popover sizing can be done with:
     * `sizeThatFits` -- just a method to see how much space an element is taking
     * This will call `presentingViewController` which basically is not nil when the particular MVC is top of stack.
+
+
+##Demo
+[Demo]psych_demo.gif
